@@ -15,7 +15,6 @@
     "U_LIB_CIV_Schoolteacher_2",
     "U_LIB_CIV_Assistant",
     "U_LIB_CIV_Assistant_2",
-    "U_LIB_CIV_Priest",
     "U_LIB_CIV_Doctor",
     "U_LIB_CIV_Functionary_4",
     "U_LIB_CIV_Functionary_3",
