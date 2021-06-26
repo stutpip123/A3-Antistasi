@@ -115,9 +115,9 @@ _loadoutData setVariable ["smokeGrenades", ["LIB_NB39"]];
 //Basic equipment. Shouldn't need touching most of the time.
 //Mods might override this, or certain mods might want items removed (No GPSs in WW2, for example)
 _loadoutData setVariable ["maps", ["ItemMap"]];
-_loadoutData setVariable ["watches", ["ItemWatch"]];
-_loadoutData setVariable ["compasses", ["ItemCompass"]];
-_loadoutData setVariable ["radios", ["ItemRadio"]];
+_loadoutData setVariable ["watches", ["LIB_GER_ItemWatch"]];
+_loadoutData setVariable ["compasses", ["LIB_GER_ItemCompass_deg"]];
+_loadoutData setVariable ["radios", []];
 _loadoutData setVariable ["gpses", []];
 _loadoutData setVariable ["NVGs", []];
 _loadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
