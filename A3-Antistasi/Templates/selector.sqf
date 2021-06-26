@@ -59,17 +59,17 @@ A3A_Reb_template = switch(true) do {
     case (A3A_hasIFA): {
         switch(true) do {
             case (worldName in arcticmaps): {
+	        Info("Using Arctic POL Template");
                 ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arctic.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using arctic POL Template");
             };
-            case (worldName in temperatemaps);
-            case (worldName in tropicalmaps): {
+            case (worldName in tropicalmaps);
+            case (worldName in temperatemaps): {
+                Info("Using Temperate POL Templates");
                 ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using tropical POL Templates");
             };
             default {
+	        Info("Using Arid POL Templates");
                 ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arid.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using arid POL Templates");
             };
         };
         "IFA"
@@ -185,17 +185,17 @@ A3A_Occ_template = switch(true) do {
     case (A3A_hasIFA): {
         switch(true) do {
             case (worldName in arcticmaps): {
+	        Info("Using Arctic WEH Template");
                 ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arctic.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using arctic WEH Template");
             };
-            case (worldName in temperatemaps);
-            case (worldName in tropicalmaps): {
+            case (worldName in tropicalmaps);
+            case (worldName in temperatemaps): {
+	        Info("Using Temperate WEH Template");
                 ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using tropical WEH Template");
             };
             default {
+	        Info("Using Arid WEH Template");
                 ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arid.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using arid WEH Templates");
             };
        };
 	     "IFA"
@@ -270,17 +270,17 @@ A3A_Inv_template = switch(true) do {
     case (A3A_hasIFA): {
         switch(true) do {
             case (worldName in arcticmaps): {
+	        Info("Using Arctic SOV Template");
                 ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arctic.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using arctic SOV Template");
             };
             case (worldName in temperatemaps);
             case (worldName in tropicalmaps): {
+	        Info("Using Temperate SOV Template");
                 ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using tropical SOV Template");
             };
             default {
+	        Info("Using Arid SOV Template");
                 ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arid.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using arid SOV Template");
             };
         };
         "IFA"
@@ -310,33 +310,34 @@ A3A_Civ_template = switch(true) do {
             case (toLower worldName in arcticmaps);
             case (toLower worldName in temperatemaps);
             case (toLower worldName in tropicalmaps): {
+	        Info("Using 3CB Civ Temperate Template");
                 ["Templates\NewTemplates\3CB\3CB_Civ_Temperate.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using 3CB Civ Temperate Template");
             };
             default {
+	        Info("Using 3CB Civ Arid Template");
                 ["Templates\NewTemplates\3CB\3CB_Civ_Arid.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using 3CB Civ Arid Template");
                 "3CBFactions"
             };
         };
     };
     case (A3A_hasRHS): {
-        ["Templates\NewTemplates\RHS\RHS_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         Info("Using RHS Civ Template");
+        ["Templates\NewTemplates\RHS\RHS_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         "RHS"
     };
     case (A3A_hasVN): {
-        ["Templates\NewTemplates\VN\VN_CIV.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         Info("Using VN CIV Template");
+        ["Templates\NewTemplates\VN\VN_CIV.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         "VN"
     };
     case (A3A_hasIFA): {
-        ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         Info("Using IFA Civ Template");
+        ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
+	"IFA"
     };
     default {
-        ["Templates\NewTemplates\Vanilla\Vanilla_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         Info("Using Vanilla Civ Template");
+        ["Templates\NewTemplates\Vanilla\Vanilla_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         "Vanilla"
     };
 };
@@ -374,8 +375,8 @@ if (A3A_hasRHS) then {call compile preProcessFileLineNumbers "Templates\NewTempl
 if (A3A_has3CBFactions) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\3CB\3CBFactions_Logistics_Nodes.sqf"};
 if (A3A_has3CBBAF) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\3CB\3CBBAF_Logistics_Nodes.sqf"};
 if (A3A_hasVN) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN\VN_Logistics_Nodes.sqf"};
+if (A3A_hasIFA) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\IFA\IFA_Logistics_Nodes.sqf"};
 
-if (A3A_hasIFA) then {call compile preProcessFileLineNumbers "Templates\IFA\IFA_Logistics_Nodes.sqf"};
 //if (A3A_hasFFAA) then {call compile preProcessFileLineNumbers "Templates\FFAA\FFAA_Logistics_Nodes.sqf"};		//disabled until imtegrated
 //if (A3A_hasD3S) then {call compile preProcessFileLineNumbers "Templates\AddonVics\d3s_Logi_Nodes.sqf";};		//disabled until imtegrated
 //if (A3A_hasRDS) then {call compile preProcessFileLineNumbers "Templates\AddonVics\rds_Logi_Nodes.sqf";};		//disabled until imtegrated
