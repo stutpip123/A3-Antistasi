@@ -59,19 +59,19 @@ A3A_Reb_template = switch(true) do {
     case (A3A_hasIFA): {
         switch(true) do {
             case (worldName in arcticmaps): {
-                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arctic.sqf", independent] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arctic.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using arctic POL Template");
             };
             case (worldName in temperatemaps): {
-                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using temperate POL Templates");
             };
             case (worldName in tropicalmaps): {
-                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using tropical POL Templates");
             };
             default {
-                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arid.sqf", independent] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arid.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using arid POL Templates");
             };
         };
@@ -188,19 +188,19 @@ A3A_Occ_template = switch(true) do {
     case (A3A_hasIFA): {
         switch(true) do {
             case (worldName in arcticmaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arctic.sqf", west] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arctic.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using arctic WEH Template");
             };
             case (worldName in temperatemaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using temperate WEH Template");
             };
             case (worldName in tropicalmaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using tropical WEH Template");
             };
             default {
-                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arid.sqf", west] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arid.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using arid WEH Templates");
             };
        };
@@ -276,19 +276,19 @@ A3A_Inv_template = switch(true) do {
     case (A3A_hasIFA): {
         switch(true) do {
             case (worldName in arcticmaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arctic.sqf", east] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arctic.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using arctic SOV Template");
             };
             case (worldName in temperatemaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using temperate SOV Template");
             };
             case (worldName in tropicalmaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using tropical SOV Template");
             };
             default {
-                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arid.sqf", east] call A3A_fnc_compatabilityLoadFaction;
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arid.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using arid SOV Template");
             };
         };
@@ -340,7 +340,7 @@ A3A_Civ_template = switch(true) do {
         "VN"
     };
     case (A3A_hasIFA): {
-        ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatabilityLoadFaction;
+        ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         Info("Using IFA Civ Template");
     };
     default {
