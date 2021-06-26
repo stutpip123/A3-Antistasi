@@ -56,29 +56,27 @@ A3A_Reb_template = switch(true) do {
         Info("Using Pissed off Farmers Template");
         "VN"
     };
-    /* disabled until imtegrated
     case (A3A_hasIFA): {
-      switch(true) do {
-        case (toLower worldName in arcticmaps): {
-          call compile preProcessFileLineNumbers "Templates\IFA\IFA_Reb_POL_Arct.sqf";
-          Info("Using arctic POL Template");
+        switch(true) do {
+            case (worldName in arcticmaps): {
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arctic.sqf", independent] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using arctic POL Template");
+            };
+            case (worldName in temperatemaps): {
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using temperate POL Templates");
+            };
+            case (worldName in tropicalmaps): {
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using tropical POL Templates");
+            };
+            default {
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arid.sqf", independent] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using arid POL Templates");
+            };
         };
-        case (toLower worldName in temperatemaps): {
-          call compile preProcessFileLineNumbers "Templates\IFA\IFA_Reb_POL_Temp.sqf";
-          Info("Using temperate POL Templates");
-        };
-        case (toLower worldName in tropicalmaps): {
-          call compile preProcessFileLineNumbers "Templates\IFA\IFA_Reb_POL_Temp.sqf";
-          Info("Using tropical POL Templates");
-        };
-        default {
-          call compile preProcessFileLineNumbers "Templates\IFA\IFA_Reb_POL_Arid.sqf";
-          Info("Using arid POL Templates");
-        };
-      };
-      "IFA"
+        "IFA"
     };
-    */
     default {
         switch(true) do {//This one (vanilla) works differently so that we don't get DLC kit on modded maps.
             case (toLower worldName == "enoch"): {
@@ -187,29 +185,27 @@ A3A_Occ_template = switch(true) do {
         Info("Using VN PAVN Template");
         "VN"
     };
-    /* disabled until imtegrated
     case (A3A_hasIFA): {
         switch(true) do {
-        case (toLower worldName in arcticmaps): {
-            call compile preProcessFileLineNumbers "Templates\IFA\IFA_Occ_WEH_Arct.sqf";
-            Info("Using arctic WEH Template");
-        };
-        case (toLower worldName in temperatemaps): {
-            call compile preProcessFileLineNumbers "Templates\IFA\IFA_Occ_WEH_Temp.sqf";
-            Info("Using temperate WEH Template");
-        };
-        case (toLower worldName in tropicalmaps): {
-            call compile preProcessFileLineNumbers "Templates\IFA\IFA_Occ_WEH_Temp.sqf";
-            Info("Using tropical WEH Template");
-        };
-        default {
-            call compile preProcessFileLineNumbers "Templates\IFA\IFA_Occ_WEH_Arid.sqf";
-            Info("Using arid WEH Templates");
-        };
-        };
-        "IFA"
+            case (worldName in arcticmaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arctic.sqf", west] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using arctic WEH Template");
+            };
+            case (worldName in temperatemaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using temperate WEH Template");
+            };
+            case (worldName in tropicalmaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using tropical WEH Template");
+            };
+            default {
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arid.sqf", west] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using arid WEH Templates");
+            };
+       };
+	     "IFA"
     };
-    */
     default {
         switch(true) do {//This one (vanilla) works differently so that we don't get DLC kit on modded maps.
             case (toLower worldName == "enoch"): {
@@ -277,29 +273,27 @@ A3A_Inv_template = switch(true) do {
         Info("Using VN MACV Template");
         "VN"
     };
-    /* disabled until imtegrated
     case (A3A_hasIFA): {
         switch(true) do {
-        case (toLower worldName in arcticmaps): {
-            call compile preProcessFileLineNumbers "Templates\IFA\IFA_Inv_SOV_Arct.sqf";
-            Info("Using arctic SOV Template");
-        };
-        case (toLower worldName in temperatemaps): {
-            call compile preProcessFileLineNumbers "Templates\IFA\IFA_Inv_SOV_Temp.sqf";
-            Info("Using temperate SOV Template");
-        };
-        case (toLower worldName in tropicalmaps): {
-            call compile preProcessFileLineNumbers "Templates\IFA\IFA_Inv_SOV_Temp.sqf";
-            Info("Using tropical SOV Template");
-        };
-        default {
-            call compile preProcessFileLineNumbers "Templates\IFA\IFA_Inv_SOV_Arid.sqf";
-            Info("Using arid SOV Template");
-        };
+            case (worldName in arcticmaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arctic.sqf", east] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using arctic SOV Template");
+            };
+            case (worldName in temperatemaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using temperate SOV Template");
+            };
+            case (worldName in tropicalmaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using tropical SOV Template");
+            };
+            default {
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arid.sqf", east] call A3A_fnc_compatabilityLoadFaction;
+                Info("Using arid SOV Template");
+            };
         };
         "IFA"
     };
-    */
     default {
         switch(true) do {//This one (vanilla) works differently so that we don't get DLC kit on modded maps.
             case (toLower worldName == "enoch"): {
@@ -345,13 +339,10 @@ A3A_Civ_template = switch(true) do {
         Info("Using VN CIV Template");
         "VN"
     };
-    /* disabled until imtegrated
     case (A3A_hasIFA): {
-        call compile preProcessFileLineNumbers "Templates\IFA\IFA_Civ.sqf";
+        ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatabilityLoadFaction;
         Info("Using IFA Civ Template");
-        "IFA"
     };
-    */
     default {
         ["Templates\NewTemplates\Vanilla\Vanilla_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         Info("Using Vanilla Civ Template");
