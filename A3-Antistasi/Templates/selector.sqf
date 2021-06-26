@@ -62,10 +62,7 @@ A3A_Reb_template = switch(true) do {
                 ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arctic.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using arctic POL Template");
             };
-            case (worldName in temperatemaps): {
-                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using temperate POL Templates");
-            };
+            case (worldName in temperatemaps);
             case (worldName in tropicalmaps): {
                 ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using tropical POL Templates");
@@ -191,10 +188,7 @@ A3A_Occ_template = switch(true) do {
                 ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arctic.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using arctic WEH Template");
             };
-            case (worldName in temperatemaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using temperate WEH Template");
-            };
+            case (worldName in temperatemaps);
             case (worldName in tropicalmaps): {
                 ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using tropical WEH Template");
@@ -279,10 +273,7 @@ A3A_Inv_template = switch(true) do {
                 ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arctic.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using arctic SOV Template");
             };
-            case (worldName in temperatemaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-                Info("Using temperate SOV Template");
-            };
+            case (worldName in temperatemaps);
             case (worldName in tropicalmaps): {
                 ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 Info("Using tropical SOV Template");
@@ -384,7 +375,7 @@ if (A3A_has3CBFactions) then {call compile preProcessFileLineNumbers "Templates\
 if (A3A_has3CBBAF) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\3CB\3CBBAF_Logistics_Nodes.sqf"};
 if (A3A_hasVN) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN\VN_Logistics_Nodes.sqf"};
 
-//if (A3A_hasIFA) then {call compile preProcessFileLineNumbers "Templates\IFA\IFA_Logistics_Nodes.sqf"};		//disabled until imtegrated
+if (A3A_hasIFA) then {call compile preProcessFileLineNumbers "Templates\IFA\IFA_Logistics_Nodes.sqf"};
 //if (A3A_hasFFAA) then {call compile preProcessFileLineNumbers "Templates\FFAA\FFAA_Logistics_Nodes.sqf"};		//disabled until imtegrated
 //if (A3A_hasD3S) then {call compile preProcessFileLineNumbers "Templates\AddonVics\d3s_Logi_Nodes.sqf";};		//disabled until imtegrated
 //if (A3A_hasRDS) then {call compile preProcessFileLineNumbers "Templates\AddonVics\rds_Logi_Nodes.sqf";};		//disabled until imtegrated
