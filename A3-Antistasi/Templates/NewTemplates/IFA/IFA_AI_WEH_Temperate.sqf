@@ -100,7 +100,7 @@ _loadoutData setVariable ["ATLaunchers", []];
 _loadoutData setVariable ["missileATLaunchers", [
 ["LIB_RPzB", "", "", "",["LIB_1Rnd_RPzB"], [], ""]]];
 _loadoutData setVariable ["AALaunchers", []];
-_loadoutData setVariable ["sidearms", ["Weapon_LIB_P08"]];
+_loadoutData setVariable ["sidearms", []];
 
 _loadoutData setVariable ["ATMines", ["LIB_STMI_MINE_mag"]];
 _loadoutData setVariable ["APMines", ["LIB_SMI_35_MINE_mag"]];
@@ -109,7 +109,7 @@ _loadoutData setVariable ["heavyExplosives", ["LIB_Ladung_Big_MINE_mag"]];
 
 _loadoutData setVariable ["antiTankGrenades", ["lib_shg24x7"]];
 _loadoutData setVariable ["antiInfantryGrenades", ["lib_shg24"]];
-_loadoutData setVariable ["smokeGrenades", []];
+_loadoutData setVariable ["smokeGrenades", ["LIB_NB39"]];
 
 
 //Basic equipment. Shouldn't need touching most of the time.
@@ -166,9 +166,9 @@ _sfLoadoutData setVariable ["helmets", ["H_LIB_GER_Helmet_painted","H_LIB_GER_He
 _sfLoadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
 //["Weapon", "Muzzle", "Rail", "Sight", [], [], "Bipod"];
 
-_sfLoadoutData setVariable ["rifles", [["LIB_K98", "", "", "", ["LIB_5Rnd_792x57"], [], ""]]];
-_sfLoadoutData setVariable ["carbines", [["LIB_G41", "", "", "", ["LIB_10Rnd_792x57_clip"], [], ""]]];
-_sfLoadoutData setVariable ["grenadeLaunchers", [["LIB_MP44", "", "", "", ["LIB_30Rnd_792x33"], [], ""]]];
+_sfLoadoutData setVariable ["rifles", [["LIB_G43", "", "", "", ["LIB_10Rnd_792x57"], [], ""]]];
+_sfLoadoutData setVariable ["carbines", [["LIB_MP44", "", "", "", ["LIB_30Rnd_792x33"], [], ""]]];
+_sfLoadoutData setVariable ["grenadeLaunchers", [["LIB_K98", "lib_acc_gw_sb_empty", "", "", ["LIB_30Rnd_792x33"], ["LIB_1Rnd_G_PZGR_40"], ""]]];
 _sfLoadoutData setVariable ["SMGs", [["LIB_MP40", "", "", "", ["LIB_32rnd_9x19"], [], ""]]];
 _sfLoadoutData setVariable ["machineGuns", [["LIB_MG42", "", "", "", ["LIB_50Rnd_792x57"], [], ""]]];
 _sfLoadoutData setVariable ["marksmanRifles", [["LIB_MP40", "", "", "", ["LIB_32rnd_9x19"], [], ""]]];
@@ -188,11 +188,11 @@ _militaryLoadoutData setVariable ["helmets", ["H_LIB_GER_Helmet_ns","H_LIB_GER_H
 _militaryLoadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
 
 _militaryLoadoutData setVariable ["rifles", [["LIB_K98", "", "", "", ["LIB_5Rnd_792x57"], [], ""]]];
-_militaryLoadoutData setVariable ["carbines", [["LIB_G41", "", "", "", ["LIB_10Rnd_792x57_clip"], [], ""]]];
-_militaryLoadoutData setVariable ["grenadeLaunchers", [["LIB_MP44", "", "", "", ["LIB_30Rnd_792x33"], [], ""]]];
+_militaryLoadoutData setVariable ["carbines", [["LIB_G43", "", "", "", ["LIB_10Rnd_792x57"], [], ""]]];
+_militaryLoadoutData setVariable ["grenadeLaunchers", [["LIB_K98", "lib_acc_gw_sb_empty", "", "", ["LIB_30Rnd_792x33"], ["LIB_1Rnd_G_PZGR_40"], ""]]];
 _militaryLoadoutData setVariable ["SMGs", [["LIB_MP40", "", "", "", ["LIB_32rnd_9x19"], [], ""]]];
 _militaryLoadoutData setVariable ["machineGuns", [["LIB_MG42", "", "", "", ["LIB_50Rnd_792x57"], [], ""]]];
-_militaryLoadoutData setVariable ["marksmanRifles", [["LIB_K98", "", "", "", ["LIB_5Rnd_792x57"], [], ""]]];
+_militaryLoadoutData setVariable ["marksmanRifles", [["LIB_G41", "", "", "", ["LIB_10Rnd_792x57_clip"], [], ""]]];
 _militaryLoadoutData setVariable ["sniperRifles", [["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57"], [], ""]]];
 _militaryLoadoutData setVariable ["sidearms", [["LIB_P08", "", "", "", ["LIB_8Rnd_9x19_P08"], [], ""]]];
 
@@ -225,7 +225,7 @@ _militiaLoadoutData setVariable ["helmets", ["H_LIB_GER_Helmet"]];
 
 _militiaLoadoutData setVariable ["rifles", [["LIB_K98", "", "", "", ["LIB_5Rnd_792x57"], [], ""]]];
 _militiaLoadoutData setVariable ["carbines", [["LIB_G41", "", "", "", ["LIB_10Rnd_792x57_clip"], [], ""]]];
-_militiaLoadoutData setVariable ["grenadeLaunchers", [["LIB_MP40", "", "", "", ["LIB_32rnd_9x19"], [], ""]]];
+_militiaLoadoutData setVariable ["grenadeLaunchers", [["LIB_K98", "lib_acc_gw_sb_empty", "", "", ["LIB_30Rnd_792x33"], ["LIB_1Rnd_G_PZGR_40"], ""]]];
 _militiaLoadoutData setVariable ["SMGs", [["LIB_MP40", "", "", "", ["LIB_32rnd_9x19"], [], ""]]];
 _militiaLoadoutData setVariable ["machineGuns", [["LIB_MG42", "", "", "", ["LIB_50Rnd_792x57"], [], ""]]];
 _militiaLoadoutData setVariable ["marksmanRifles", [["LIB_K98", "", "", "", ["LIB_5Rnd_792x57"], [], ""]]];

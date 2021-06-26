@@ -73,8 +73,8 @@
 
 //Minefield definition
 //Not Magazine type would be: ["APERSBoundingMine", "APERSMine", "ATMine"]
-["minefieldAT", ["LIB_US_M1A1_ATMINE"]] call _fnc_saveToTemplate;
-["minefieldAPERS", ["LIB_M3_MINE"]] call _fnc_saveToTemplate;
+["minefieldAT", ["LIB_TM44_MINE"]] call _fnc_saveToTemplate;
+["minefieldAPERS", ["LIB_PMD6_MINE"]] call _fnc_saveToTemplate;
 
 //PvP definitions
 ["playerDefaultLoadout", []] call _fnc_saveToTemplate;
@@ -95,12 +95,12 @@ _loadoutData setVariable ["marksmanRifles", []];
 _loadoutData setVariable ["sniperRifles", []];
 
 _loadoutData setVariable ["lightATLaunchers", [
-["LIB_RPzB", "", "", "",["LIB_1Rnd_RPzB"], [], ""]]];
+["LIB_M1A1_Bazooka", "", "", "",["LIB_1Rnd_60mm_M6"], [], ""]]];
 _loadoutData setVariable ["ATLaunchers", []];
 _loadoutData setVariable ["missileATLaunchers", [
-["LIB_RPzB", "", "", "",["LIB_1Rnd_RPzB"], [], ""]]];
+["LIB_M1A1_Bazooka", "", "", "",["LIB_1Rnd_60mm_M6"], [], ""]]];
 _loadoutData setVariable ["AALaunchers", []];
-_loadoutData setVariable ["sidearms", ["Weapon_LIB_TT33"]];
+_loadoutData setVariable ["sidearms", []];
 
 _loadoutData setVariable ["ATMines", ["LIB_TM44_MINE_mag"]];
 _loadoutData setVariable ["APMines", ["LIB_PMD6_MINE_mag"]];
