@@ -57,7 +57,7 @@
 
 ["vehiclesPolice", ["LIB_GazM1_SOV_camo_sand"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["LIB_Maxim_M30_Trench"]] call _fnc_saveToTemplate;
+["staticMGs", ["I_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
 ["staticAT", ["LIB_Zis3_w"]] call _fnc_saveToTemplate;
 ["staticAA", ["LIB_61k"]] call _fnc_saveToTemplate;
 ["staticMortars", ["LIB_BM37"]] call _fnc_saveToTemplate;
@@ -66,7 +66,7 @@
 ["mortarMagazineSmoke", "LIB_82mm_BM37_SmokeShell"] call _fnc_saveToTemplate;
 
 //Bagged weapon definitions
-["baggedMGs", [["LIB_Maxim_Bag", "LIB_Maxim_Bar"]]] call _fnc_saveToTemplate;
+["baggedMGs", [["I_HMG_02_support_high_F", "I_G_HMG_02_high_weapon_F"]]] call _fnc_saveToTemplate;
 ["baggedAT", [[]]] call _fnc_saveToTemplate;
 ["baggedAA", [[]]] call _fnc_saveToTemplate;
 ["baggedMortars", [["LIB_BM37_Barrel","LIB_BM37_Tripod_Deployed"]]] call _fnc_saveToTemplate;
