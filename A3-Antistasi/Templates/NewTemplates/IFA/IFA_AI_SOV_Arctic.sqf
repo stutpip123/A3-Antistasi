@@ -28,7 +28,7 @@
 ["vehiclesMedical", ["LIB_Zis5v_med_w"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["LIB_Scout_m3_w","LIB_SOV_M3_Halftrack_w"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["LIB_SU85_w","LIB_T34_76_w","LIB_T34_85_w","LIB_M4A2_SOV_w","LIB_JS2_43_w"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["lib_zis5v_61K"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["LIB_Zis5v_61K"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;			//this line determines light APCs
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;				//this line determines IFVs
 
