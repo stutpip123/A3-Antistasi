@@ -52,14 +52,16 @@
 	,"LIB_GazM1_dirty", 0.5
 	,"LIB_GazM1_SOV", 0.4
 	,"LIB_GazM1_SOV_camo_sand", 0.4
-	,"LIB_Willys_MB", 0.3
+	,"LIB_Willys_MB", 0.2
+	,"LIB_US_NAC_Willys_MB", 0.2
+	,"LIB_US_NAC_Willys_MB_Hood", 0.2
 	,"LIB_Kfz1", 0.2
 	,"LIB_Kfz1_camo", 0.2
 	,"LIB_Kfz1_Hood", 0.2
 	,"LIB_Kfz1_Hood_camo", 0.2
 	,"LIB_Kfz1_Hood_sernyt", 0.2
 	,"LIB_Kfz1_sernyt", 0.2
-	,"LIB_Willys_MB_Hood", 0.3]] call _fnc_saveToTemplate; 			//this line determines civilian cars -- Example: ["vehiclesCivCar", ["C_Offroad_01_F"]] -- Array, can contain multiple assets
+	,"LIB_Willys_MB_Hood", 0.2]] call _fnc_saveToTemplate; 			//this line determines civilian cars -- Example: ["vehiclesCivCar", ["C_Offroad_01_F"]] -- Array, can contain multiple assets
 
 ["vehiclesCivIndustrial", ["LIB_US6_Open", 0.1
 	,"LIB_US6_Open_Cargo", 0.1
