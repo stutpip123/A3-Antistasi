@@ -13,7 +13,7 @@
 ["vehicleLightArmed", "LIB_Kfz1_MG42_sernyt"] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F","B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
 ["vehicleTruck", "LIB_OpelBlitz_Open_Y_Camo_w"] call _fnc_saveToTemplate; 			//this line determines the trucks -- Example: ["vehiclesTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
 ["vehicleAT", "LIB_M8_Greyhound"] call _fnc_saveToTemplate; 		//this line determines AT vehicle -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
-["vehicleAA", "lib_zis5v_61K"] call _fnc_saveToTemplate; 		//this line determines AA vehicle -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
+["vehicleAA", "LIB_Zis5v_61K"] call _fnc_saveToTemplate; 		//this line determines AA vehicle -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
 
 ["vehicleBoat", "LIB_LCA"] call _fnc_saveToTemplate; 	//this line determines transport boats -- Example: ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] -- Array, can contain multiple assets
 ["vehicleRepair", "LIB_UK_LCI"] call _fnc_saveToTemplate; 			//this line determines gun boats -- Example: ["vehiclesGunboats", ["B_Boat_Armed_01_minigun_F"]] -- Array, can contain multiple assets
@@ -48,7 +48,17 @@
 ///////////////////////////
 //  Rebel Starting Gear  //
 ///////////////////////////
-allRebelUniforms append ["U_LIB_WP_Soldier_camo_1","U_LIB_WP_Soldier_camo_3","U_LIB_WP_Soldier_camo_2"];
+["uniforms", [
+    "U_LIB_WP_Soldier_camo_1",
+    "U_LIB_WP_Soldier_camo_2",
+    "U_LIB_WP_Soldier_camo_3"
+]] call _fnc_saveToTemplate;
+
+["headgear", [
+    "H_LIB_WP_Helmet",
+    "H_LIB_WP_Helmet_camo",
+    "H_LIB_WP_Helmet_med"
+]] call _fnc_saveToTemplate;
 
 private _initialRebelEquipment = [
 	"LIB_K98","LIB_Webley_mk6","LIB_PTRD",
@@ -107,7 +117,11 @@ _loadoutData setVariable ["gpses", []];
 _loadoutData setVariable ["NVGs", []]; 
 _loadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
 
-_loadoutData setVariable ["uniforms", ["U_LIB_WP_Soldier_camo_3","U_LIB_WP_Soldier_camo_3","U_LIB_WP_Soldier_camo_2"]];
+_loadoutData setVariable ["uniforms", [
+    "U_LIB_WP_Soldier_camo_1",
+    "U_LIB_WP_Soldier_camo_2",
+    "U_LIB_WP_Soldier_camo_3"
+]];
 _loadoutData setVariable ["vests", []];
 _loadoutData setVariable ["backpacks", []];
 _loadoutData setVariable ["longRangeRadios", []];

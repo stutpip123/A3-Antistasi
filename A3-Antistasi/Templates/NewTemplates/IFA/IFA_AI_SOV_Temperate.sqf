@@ -14,7 +14,7 @@
 //////////////////////////
 
 ["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate;
-["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
+["surrenderCrate", "LIB_AmmoCrate_Arty_SU"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
 ["vehiclesBasic", ["LIB_GazM1_SOV"]] call _fnc_saveToTemplate;
@@ -28,7 +28,7 @@
 ["vehiclesMedical", ["LIB_Zis5v_Med"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["LIB_Scout_M3_FFV","LIB_SOV_M3_Halftrack"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["LIB_T34_76","LIB_T34_85","LIB_JS2_43","LIB_SU85"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["LIB_Zis5v_61K"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["lib_zis5v_61K"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["not_supported"]] call _fnc_saveToTemplate;			//this line determines light APCs
 ["vehiclesIFVs", ["not_supported"]] call _fnc_saveToTemplate;				//this line determines IFVs
 

@@ -6,13 +6,46 @@
     "U_LIB_CIV_Citizen_1",
     "U_LIB_CIV_Citizen_2",
     "U_LIB_CIV_Citizen_3",
+    "U_LIB_CIV_Citizen_4",
+    "U_LIB_CIV_Citizen_5",
+    "U_LIB_CIV_Citizen_6",
+    "U_LIB_CIV_Citizen_7",
+    "U_LIB_CIV_Citizen_8",
+    "U_LIB_CIV_Schoolteacher",
+    "U_LIB_CIV_Schoolteacher_2",
+    "U_LIB_CIV_Assistant",
+    "U_LIB_CIV_Assistant_2",
+    "U_LIB_CIV_Priest",
+    "U_LIB_CIV_Doctor",
     "U_LIB_CIV_Functionary_4",
+    "U_LIB_CIV_Functionary_3",
+    "U_LIB_CIV_Functionary_2",
+    "U_LIB_CIV_Functionary_1",
     "U_LIB_CIV_Villager_4",
     "U_LIB_CIV_Villager_3",
+    "U_LIB_CIV_Villager_2",
+    "U_LIB_CIV_Villager_1",
     "U_LIB_CIV_Woodlander_4",
+    "U_LIB_CIV_Woodlander_2",
+    "U_LIB_CIV_Woodlander_3",
     "U_LIB_CIV_Woodlander_1"]] call _fnc_saveToTemplate;
 
-["headgear", []] call _fnc_saveToTemplate;
+["headgear", [
+    "H_LIB_CIV_Villager_Cap_1",
+    "H_LIB_CIV_Villager_Cap_2",
+    "H_LIB_CIV_Villager_Cap_3",
+    "H_LIB_CIV_Villager_Cap_4",
+    "H_LIB_CIV_Worker_Cap_1",
+    "H_LIB_CIV_Worker_Cap_2",
+    "H_LIB_CIV_Worker_Cap_3",
+    "H_LIB_CIV_Worker_Cap_4",
+    "H_StrawHat",
+    "H_StrawHat_dark",
+    "H_Hat_brown",
+    "H_Hat_grey",
+    "H_Hat_tan",
+    "H_LIB_GER_Ushanka"
+]] call _fnc_saveToTemplate;
 
 
 
