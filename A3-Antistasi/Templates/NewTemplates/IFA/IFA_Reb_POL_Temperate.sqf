@@ -63,16 +63,11 @@
 private _initialRebelEquipment = [
 	"LIB_K98","LIB_Webley_mk6","LIB_PTRD",
 	"LIB_5Rnd_792x57","LIB_6Rnd_455","LIB_1Rnd_145x114",
-	"B_LIB_SOV_RA_MGAmmoBag_Empty","B_LIB_GER_Radio",
+	"B_LIB_SOV_RA_MGAmmoBag_Empty",
 	"V_LIB_WP_OfficerVest","V_LIB_WP_Kar98Vest","V_LIB_WP_MP40Vest",
 	"LIB_Binocular_GER", "LIB_GER_ItemWatch", "LIB_GER_ItemCompass"
 ];
-if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
-if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "tf_anprc155"};
-if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
-if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "TFAR_anprc155"};
-
-["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
+if (startWithLongRangeRadio) then {_initialRebelEquipment pushBack "B_LIB_GER_Radio_ACRE2"};
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
