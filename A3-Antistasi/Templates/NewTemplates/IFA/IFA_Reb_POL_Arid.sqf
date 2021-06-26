@@ -65,6 +65,7 @@ private _initialRebelEquipment = [
 	"LIB_5Rnd_792x57","LIB_6Rnd_455","LIB_1Rnd_145x114",
 	"B_LIB_SOV_RA_MGAmmoBag_Empty",
 	"V_LIB_WP_OfficerVest","V_LIB_WP_Kar98Vest","V_LIB_WP_MP40Vest",
+	"H_LIB_WP_Helmet", "H_LIB_WP_Helmet_camo", "H_LIB_WP_Helmet_med",
 	"LIB_Binocular_GER"
 ];
 if (startWithLongRangeRadio) then {_initialRebelEquipment pushBack "B_LIB_GER_Radio_ACRE2"};
