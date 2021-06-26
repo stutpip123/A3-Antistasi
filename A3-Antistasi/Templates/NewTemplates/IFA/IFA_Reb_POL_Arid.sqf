@@ -65,7 +65,7 @@ private _initialRebelEquipment = [
 	"LIB_5Rnd_792x57","LIB_6Rnd_455","LIB_1Rnd_145x114",
 	"B_LIB_SOV_RA_MGAmmoBag_Empty","B_LIB_GER_Radio",
 	"V_LIB_WP_OfficerVest","V_LIB_WP_Kar98Vest","V_LIB_WP_MP40Vest",
-	"LIB_Binocular_GER", "ItemRadio"
+	"LIB_Binocular_GER", "LIB_GER_ItemWatch", "LIB_GER_ItemCompass_deg"
 ];
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "tf_anprc155"};
