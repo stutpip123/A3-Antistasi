@@ -57,16 +57,16 @@
 
 ["vehiclesPolice", ["LIB_Kfz1"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["LIB_MG42_Lafette_Deployed"]] call _fnc_saveToTemplate;
+["staticMGs", ["I_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
 ["staticAT", ["LIB_Pak40"]] call _fnc_saveToTemplate;
-["staticAA", ["LIB_Flakvierling_38"]] call _fnc_saveToTemplate;
+["staticAA", ["LIB_FlaK_38"]] call _fnc_saveToTemplate;
 ["staticMortars", ["LIB_GrWr34"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "LIB_8Rnd_81mmHE_GRWR34"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "LIB_81mm_GRWR34_SmokeShell"] call _fnc_saveToTemplate;
 
 //Bagged weapon definitions
-["baggedMGs", [["Weapon_LIB_Laffete_Tripod", "Weapon_LIB_MG42"]]] call _fnc_saveToTemplate;
+["baggedMGs", [["I_HMG_02_support_high_F", "I_G_HMG_02_high_weapon_F"]]] call _fnc_saveToTemplate;
 ["baggedAT", [[]]] call _fnc_saveToTemplate;
 ["baggedAA", [[]]] call _fnc_saveToTemplate;
 ["baggedMortars", [["LIB_GrWr34_Barrel","LIB_GrWr34_Tripod_Deployed"]]] call _fnc_saveToTemplate;
