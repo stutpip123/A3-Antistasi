@@ -26,7 +26,7 @@
 ["vehicleCivHeli", "not_supported"] call _fnc_saveToTemplate;
 ["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
 
-["staticMG", "LIB_M1919_M2"] call _fnc_saveToTemplate; 					//this line determines static MGs -- Example: ["staticMG", ["B_HMG_01_high_F"]] -- Array, can contain multiple assets
+["staticMG", "I_G_HMG_02_high_F"] call _fnc_saveToTemplate; 					//this line determines static MGs -- Example: ["staticMG", ["B_HMG_01_high_F"]] -- Array, can contain multiple assets
 ["staticAT", "LIB_Pak40"] call _fnc_saveToTemplate; 					//this line determinesstatic ATs -- Example: ["staticAT", ["B_static_AT_F"]] -- Array, can contain multiple assets
 ["staticAA", "LIB_FlaK_30"] call _fnc_saveToTemplate; 					//this line determines static AAs -- Example: ["staticAA", ["B_static_AA_F"]] -- Array, can contain multiple assets
 ["staticMortar", "LIB_M2_60"] call _fnc_saveToTemplate; 				//this line determines static mortars -- Example: ["staticMortar", ["B_Mortar_01_F"]] -- Array, can contain multiple assets
@@ -34,7 +34,7 @@
 ["staticMortarMagSmoke", "not_supported"] call _fnc_saveToTemplate;
 
 //Static weapon definitions
-["baggedMGs", [["LIB_Maxim_Bag", "LIB_Maxim_Bar"]]] call _fnc_saveToTemplate; 				//this line determines bagged static MGs -- Example: ["baggedMGs", [["B_HMG_01_high_F", "B_HMG_01_support_high_F"]]] -- Array, can contain multiple assets
+["baggedMGs", [["I_HMG_02_support_high_F", "I_G_HMG_02_high_weapon_F"]]] call _fnc_saveToTemplate; 				//this line determines bagged static MGs -- Example: ["baggedMGs", [["B_HMG_01_high_F", "B_HMG_01_support_high_F"]]] -- Array, can contain multiple assets
 ["baggedAT", [[]]] call _fnc_saveToTemplate; 					//this line determines bagged static ATs -- Example: ["baggedAT", [["B_AT_01_weapon_F", "B_HMG_01_support_F"]]] -- Array, can contain multiple assets
 ["baggedAA", [[]]] call _fnc_saveToTemplate; 					//this line determines bagged static AAs -- Example: ["baggedAA", [["B_AA_01_weapon_F", "B_HMG_01_support_F"]]] -- Array, can contain multiple assets
 ["baggedMortars", [["LIB_M2_60_Barrel","LIB_M2_60_Tripod_Deployed"]]] call _fnc_saveToTemplate; 			//this line determines bagged static mortars -- Example: ["baggedMortars", [["B_Mortar_01_F", "B_Mortar_01_weapon_F"]]] -- Array, can contain multiple assets
