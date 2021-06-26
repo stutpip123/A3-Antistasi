@@ -69,6 +69,8 @@ private _initialRebelEquipment = [
 ];
 if (startWithLongRangeRadio) then {_initialRebelEquipment pushBack "B_LIB_GER_Radio_ACRE2"};
 
+["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
+
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 //     DO NOT GO PAST THIS LINE
