@@ -18,11 +18,11 @@
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
 ["vehiclesBasic", ["LIB_GazM1_SOV"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["LIB_Willys_MB","LIB_Willys_MB_Hood"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed",["LIB_UK_Willys_MB_M1919","LIB_Scout_M3"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["LIB_US_NAC_Willys_MB","LIB_Willys_MB_Hood"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed",["LIB_US_NAC_Willys_MB_M1919","LIB_Scout_M3"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["LIB_Zis5v","LIB_US6_Tent","LIB_US6_Open"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["LIB_US6_Open_Cargo","LIB_US6_Tent_Cargo"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["LIB_US_GMC_Ammo"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["LIB_US_NAC_GMC_Ammo"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["LIB_Zis6_Parm"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["LIB_Zis5v_Fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["LIB_Zis5v_Med"]] call _fnc_saveToTemplate;
