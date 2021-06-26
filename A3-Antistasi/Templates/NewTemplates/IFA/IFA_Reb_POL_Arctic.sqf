@@ -65,7 +65,7 @@ private _initialRebelEquipment = [
 	"LIB_5Rnd_792x57","LIB_6Rnd_455","LIB_1Rnd_145x114",
 	"B_LIB_SOV_RA_MGAmmoBag_Empty",
 	"V_LIB_WP_OfficerVest","V_LIB_WP_Kar98Vest","V_LIB_WP_MP40Vest",
-	"LIB_Binocular_GER", "LIB_GER_ItemWatch", "LIB_GER_ItemCompass"
+	"LIB_Binocular_GER"
 ];
 if (startWithLongRangeRadio) then {_initialRebelEquipment pushBack "B_LIB_GER_Radio_ACRE2"};
 
@@ -107,9 +107,9 @@ _loadoutData setVariable ["smokeGrenades", []]; 		//this line determines smoke g
 //Basic equipment. Shouldn't need touching most of the time.
 //Mods might override this, or certain mods might want items removed (No GPSs in WW2, for example)
 _loadoutData setVariable ["maps", ["ItemMap"]];
-_loadoutData setVariable ["watches", ["ItemWatch"]];
-_loadoutData setVariable ["compasses", ["ItemCompass"]];
-_loadoutData setVariable ["radios", ["ItemRadio"]];
+_loadoutData setVariable ["watches", ["LIB_GER_ItemWatch"]];
+_loadoutData setVariable ["compasses", ["LIB_GER_ItemCompass"]];
+_loadoutData setVariable ["radios", []];
 _loadoutData setVariable ["gpses", []];
 _loadoutData setVariable ["NVGs", []]; 
 _loadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
