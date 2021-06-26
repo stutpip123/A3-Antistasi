@@ -18,7 +18,7 @@
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
 ["vehiclesBasic", ["LIB_GazM1_SOV"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["LIB_US_NAC_Willys_MB","LIB_Willys_MB_Hood"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["LIB_US_NAC_Willys_MB","LIB_US_NAC_Willys_MB_Hood"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed",["LIB_US_NAC_Willys_MB_M1919","LIB_Scout_M3"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["LIB_Zis5v","LIB_US6_Tent","LIB_US6_Open"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["LIB_US6_Open_Cargo","LIB_US6_Tent_Cargo"]] call _fnc_saveToTemplate;
@@ -53,11 +53,11 @@
 //Config special vehicles
 ["vehiclesMilitiaLightArmed", ["LIB_Scout_M3"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["LIB_US6_Open"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["LIB_Willys_MB"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["LIB_US_NAC_Willys_MB"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["LIB_GazM1_SOV_camo_sand"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["LIB_Maxim_M30_Trench"]] call _fnc_saveToTemplate;
+["staticMGs", ["I_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
 ["staticAT", ["LIB_Zis3"]] call _fnc_saveToTemplate;
 ["staticAA", ["LIB_61k"]] call _fnc_saveToTemplate;
 ["staticMortars", ["LIB_BM37"]] call _fnc_saveToTemplate;
@@ -66,7 +66,7 @@
 ["mortarMagazineSmoke", "not_supported"] call _fnc_saveToTemplate;
 
 //Bagged weapon definitions
-["baggedMGs", [["LIB_Maxim_Bag", "LIB_Maxim_Bar"]]] call _fnc_saveToTemplate;
+["baggedMGs", [["I_HMG_02_support_high_F", "I_G_HMG_02_high_weapon_F"]]] call _fnc_saveToTemplate;
 ["baggedAT", [[]]] call _fnc_saveToTemplate;
 ["baggedAA", [[]]] call _fnc_saveToTemplate;
 ["baggedMortars", [["LIB_BM37_Barrel","LIB_BM37_Tripod_Deployed"]]] call _fnc_saveToTemplate;
