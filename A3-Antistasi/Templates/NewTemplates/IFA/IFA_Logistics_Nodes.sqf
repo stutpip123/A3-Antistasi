@@ -83,7 +83,9 @@ A3A_logistics_attachmentOffset append [
   ["LIB_MG42_Lafette_Deployed" call A3A_fnc_classNameToModel,                              [0, -1.5, 0],             [0,-1,0],                   4,      100], // MG42
   ["LIB_GrWr34" call A3A_fnc_classNameToModel,                              [0, 0, 1],             [0,-1,0],                   4,      100], // German Mortar
   ["LIB_FlaK_30" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   4,      100], // AK AA
+  ["LIB_FlaK_30_w" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   4,      100], // AK AA
   ["LIB_Flakvierling_38" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   4,      100], // German AA
+  ["LIB_Flakvierling_38_w" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   4,      100], // German AA
   ["LIB_BM37" call A3A_fnc_classNameToModel,                              [0, 0, 1],             [0,-1,0],                   4,      100], // Soviet Mortar
   //Crates
   ["LIB_AmmoCrate_Arty_SU" call A3A_fnc_classNameToModel,                              [0, 0, -0.1],             [0,0,0],                   1] // Surrender Box
@@ -103,7 +105,9 @@ A3A_logistics_coveredVehicles append ["LIB_OpelBlitz_Tent_Y_Camo", "LIB_OpelBlit
 A3A_logistics_weapons append [
 	["LIB_MG42_Lafette_Deployed" call A3A_fnc_classNameToModel, ["LIB_US_GMC_Open", "LIB_US6_Open","LIB_OpelBlitz_Open_Y_Camo"]],
 	["LIB_FlaK_30" call A3A_fnc_classNameToModel, ["LIB_US_GMC_Open", "LIB_US6_Open","LIB_OpelBlitz_Open_Y_Camo"]],
+	["LIB_FlaK_30_w" call A3A_fnc_classNameToModel, ["LIB_US_GMC_Open", "LIB_US6_Open","LIB_OpelBlitz_Open_Y_Camo"]],
 	["LIB_Flakvierling_38" call A3A_fnc_classNameToModel, ["LIB_US_GMC_Open", "LIB_US6_Open","LIB_OpelBlitz_Open_Y_Camo"]],
+	["LIB_Flakvierling_38_w" call A3A_fnc_classNameToModel, ["LIB_US_GMC_Open", "LIB_US6_Open","LIB_OpelBlitz_Open_Y_Camo"]],
 	["LIB_GrWr34" call A3A_fnc_classNameToModel, ["LIB_US_GMC_Open", "LIB_US6_Open","LIB_OpelBlitz_Open_Y_Camo"]],
 	["LIB_BM37" call A3A_fnc_classNameToModel, ["LIB_US_GMC_Open", "LIB_US6_Open","LIB_OpelBlitz_Open_Y_Camo"]]
 ];
