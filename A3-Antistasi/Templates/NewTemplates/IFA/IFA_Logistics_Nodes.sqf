@@ -82,10 +82,12 @@ A3A_logistics_attachmentOffset append [
 // Static weapons
   ["LIB_MG42_Lafette_Deployed" call A3A_fnc_classNameToModel,                              [0, -1.5, 0],             [0,-1,0],                   4,      100], // MG42
   ["LIB_GrWr34" call A3A_fnc_classNameToModel,                              [0, 0, 1],             [0,-1,0],                   4,      100], // German Mortar
-  ["LIB_FlaK_30" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   4,      100], // AK AA
-  ["LIB_FlaK_30_w" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   4,      100], // AK AA
-  ["LIB_Flakvierling_38" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   4,      100], // German AA
-  ["LIB_Flakvierling_38_w" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   4,      100], // German AA
+  ["LIB_FlaK_30" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   3,      100], // AK AA
+  ["LIB_FlaK_30_w" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   3,      100], // AK AA
+  ["LIB_FlaK_38" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   3,      100], // German AA
+  ["LIB_FlaK_38_w" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   3,      100], // German AA
+  ["LIB_Flakvierling_38" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   3,      100], // German AA
+  ["LIB_Flakvierling_38_w" call A3A_fnc_classNameToModel,                              [0, -0.5, 0],             [0,-1,0],                   3,      100], // German AA
   ["LIB_BM37" call A3A_fnc_classNameToModel,                              [0, 0, 1],             [0,-1,0],                   4,      100], // Soviet Mortar
   //Crates
   ["LIB_AmmoCrate_Arty_SU" call A3A_fnc_classNameToModel,                              [0, 0, -0.1],             [0,0,0],                   1] // Surrender Box
