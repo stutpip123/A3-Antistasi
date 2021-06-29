@@ -175,8 +175,8 @@ _sfLoadoutData setVariable ["carbines", [["LIB_SVT_40", "", "", "", ["LIB_10Rnd_
 _sfLoadoutData setVariable ["grenadeLaunchers", [["LIB_M9130_DYAKONOV", "LIB_ACC_GL_DYAKONOV_Empty", "", "", ["LIB_5Rnd_762x54"], ["LIB_1Rnd_G_DYAKONOV"], ""]]];
 _sfLoadoutData setVariable ["SMGs", [["LIB_PPSh41_d", "", "", "", ["LIB_71Rnd_762x25_ap"], [], ""],
         ["LIB_PPSh41_m", "", "", "", ["LIB_35Rnd_762x25_t"], [], ""]]];
-_sfLoadoutData setVariable ["machineGuns", [["LIB_DT_OPTIC", "", "", "", ["LIB_63Rnd_762_54d"], [], ""],
-        ["LIB_DT", "", "", "", ["LIB_63Rnd_762_54"], [], ""],
+_sfLoadoutData setVariable ["machineGuns", [["LIB_DT_OPTIC", "", "", "", ["LIB_63Rnd_762x54d"], [], ""],
+        ["LIB_DT", "", "", "", ["LIB_63Rnd_762x54"], [], ""],
 	["LIB_DP28", "", "", "", ["LIB_47Rnd_762x54"], [], ""]]];
 _sfLoadoutData setVariable ["marksmanRifles", [["LIB_SVT_40", "", "", "", ["LIB_10Rnd_762x54"], [], ""],
         ["LIB_PPSh41_d", "", "", "", ["LIB_71Rnd_762x25"], [], ""]]];
