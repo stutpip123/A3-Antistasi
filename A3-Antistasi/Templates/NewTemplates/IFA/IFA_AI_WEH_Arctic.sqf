@@ -35,14 +35,14 @@
 
 ["vehiclesTransportBoats", ["LIB_LCA"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["LIB_UK_LCI"]] call _fnc_saveToTemplate;
-["vehiclesAmphibious", []] call _fnc_saveToTemplate;
+["vehiclesAmphibious", ["not_supported"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["LIB_Ju87_w"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["LIB_FW190F8_2_w"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["LIB_C47_RAF_snafu"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["not_supported"]] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", []] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["not_supported"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["not_supported"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [["LIB_leFH18", ["LIB_20x_Shell_105L28_Gr39HlC_HE","LIB_20x_Shell_105L28_Gr38_HE"]]]] call _fnc_saveToTemplate;
