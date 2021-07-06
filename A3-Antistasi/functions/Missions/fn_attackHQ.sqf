@@ -42,8 +42,8 @@ if (count _typesVeh > 0) then
 	//[_heli,"Air Attack"] spawn A3A_fnc_inmuneConvoy;
 	sleep 30;
 	};
-_typesVeh = if (_sideX == Occupants) then {vehNATOTransportHelis} else {vehCSATTransportHelis};
-if (_typesVeh isEqualTo []) then {if (_sideX == Occupants) then {vehNATOTransportPlanes} else {vehCSATTransportPlanes};};
+_typesVeh = if (_sideX == Occupants) then {vehNATOTransportHelis} else {vehCSATTransportHelis}; 
+if (_typesVeh isEqualTo ["not_supported","not_supported"]) then {_typesVeh = if (_sideX == Occupants) then {vehNATOTransportPlanes} else {vehCSATTransportPlanes}};
 _typeGroup = if (_sideX == Occupants) then {NATOSpecOp} else {CSATSpecOp};
 
 for "_i" from 0 to (round random 2) do
